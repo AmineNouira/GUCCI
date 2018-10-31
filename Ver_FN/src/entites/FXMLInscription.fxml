@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="495.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="entites.FXMLInscriptionController">
+   <children>
+      <Label layoutX="246.0" layoutY="42.0" prefHeight="52.0" prefWidth="232.0" text="Inscription" textFill="#00a4d1">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="131.0" fitWidth="191.0" layoutX="81.0" layoutY="344.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@google-new-captcha-i-am-not-robot-770x515.png" />
+         </image>
+      </ImageView>
+      <CheckBox fx:id="cbox" layoutX="85.0" layoutY="396.0" mnemonicParsing="false" prefHeight="19.0" prefWidth="94.0">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </CheckBox>
+      <Button fx:id="btninsci" layoutX="329.0" layoutY="390.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="141.0" style="-fx-background-color: #00a4d1;" text="Inscription" textFill="#fffdfd" />
+      <Label fx:id="sedescription" layoutX="145.0" layoutY="153.0" />
+      <Label layoutX="81.0" layoutY="162.0" prefHeight="17.0" prefWidth="72.0" text="Name :" />
+      <TextField fx:id="nom" layoutX="162.0" layoutY="158.0" prefHeight="25.0" prefWidth="159.0" />
+      <Label layoutX="81.0" layoutY="192.0" prefHeight="17.0" prefWidth="87.0" text="Prenom :" />
+      <TextField fx:id="prenom" layoutX="162.0" layoutY="188.0" prefHeight="25.0" prefWidth="159.0" />
+      <Label fx:id="sedescription1" layoutX="145.0" layoutY="221.0" />
+      <Label layoutX="81.0" layoutY="222.0" prefHeight="17.0" prefWidth="72.0" text="Email:" />
+      <TextField fx:id="email" layoutX="162.0" layoutY="218.0" prefHeight="25.0" prefWidth="159.0" />
+      <ComboBox fx:id="Age" layoutX="162.0" layoutY="251.0" prefHeight="25.0" prefWidth="72.0" />
+      <Label layoutX="81.0" layoutY="255.0" text="Age :" />
+      <TextField fx:id="telep" layoutX="162.0" layoutY="291.0" prefHeight="25.0" prefWidth="159.0" />
+      <Label layoutX="81.0" layoutY="295.0" prefHeight="17.0" prefWidth="72.0" text="Télephone :" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="406.0" layoutY="168.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@de.png" />
+         </image>
+      </ImageView>
+      <Hyperlink fx:id="btnre" layoutX="48.0" layoutY="49.0" text="&lt; Retour" textFill="#030303" underline="true" />
+   </children>
+</AnchorPane>

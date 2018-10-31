@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.RadialGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="402.0" prefWidth="643.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="entites.FXMLafficheController">
+   <children>
+      <TableView fx:id="table" layoutX="-3.0" layoutY="109.0" prefHeight="293.0" prefWidth="651.0">
+        <columns>
+          <TableColumn fx:id="idColumn" prefWidth="62.0" text="Id" />
+          <TableColumn fx:id="nomColumn" prefWidth="71.0" text="Nom" />
+            <TableColumn fx:id="OrganisateurColumn" prefWidth="90.0" text="Organisateur" />
+            <TableColumn fx:id="CatégorieColumn" prefWidth="105.0" text="Catégorie" />
+            <TableColumn fx:id="heurecolumn" prefWidth="77.0" text="heure" />
+            <TableColumn fx:id="Lieucolumn" prefWidth="88.0" text="Lieu" />
+            <TableColumn fx:id="Descriptioncolumn" prefWidth="85.0" text="Description" />
+            <TableColumn fx:id="imagecolumn" prefWidth="75.0" text="image" />
+        </columns>
+      </TableView>
+      <Label layoutX="26.0" layoutY="61.0" prefHeight="17.0" prefWidth="123.0" text="Search Catégorie :" />
+      <Label layoutX="343.0" layoutY="61.0" prefHeight="17.0" prefWidth="76.0" text="Search City :" />
+      <TextField layoutX="419.0" layoutY="57.0" prefHeight="25.0" prefWidth="123.0" />
+      <Label layoutX="230.0" layoutY="14.0" prefHeight="33.0" prefWidth="189.0" text="Display Evénement" textFill="#00a4d1">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Hyperlink fx:id="hy2" layoutX="18.0" layoutY="14.0" text="&lt;Retour" underline="true">
+         <textFill>
+            <RadialGradient centerX="0.5" centerY="0.5" radius="0.5">
+               <stops>
+                  <Stop color="BLACK" />
+                  <Stop color="#000000e2" offset="1.0" />
+               </stops>
+            </RadialGradient>
+         </textFill>
+      </Hyperlink>
+      <Button layoutX="550.0" layoutY="57.0" mnemonicParsing="false" onAction="#Miseajour" text="Mise Ajour" />
+      <Button layoutX="273.0" layoutY="57.0" mnemonicParsing="false" onAction="#Search" text="Search" />
+      <TextField fx:id="Chercher" layoutX="141.0" layoutY="57.0" prefHeight="25.0" prefWidth="123.0" />
+   </children>
+</AnchorPane>
